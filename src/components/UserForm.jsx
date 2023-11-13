@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const UserForm = (props) => {
-    const [personInfo, setPersonInfo] = useState ({
+    const [personInfo, setPersonInfo] = useState ({ // save in an object
         firstName: "",
         lastName: "",
         email: "",
