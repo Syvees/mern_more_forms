@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const UserForm = (props) => {
-    const [personInfo, setPersonInfo] = useState ({ // save in an object
+    const [personInfo, setPersonInfo] = useState ({ // SAVE IN AN OBJECT
         firstName: "",
         lastName: "",
         email: "",
@@ -9,7 +9,7 @@ const UserForm = (props) => {
         confirmPassword: ""
     })
 
-    const handlePersonInfo = e => {
+    const handlePersonInfo = e => { // DESTRUCTURE THEN ASSIGN VALUES
         setPersonInfo({...personInfo, [e.target.name] : e.target.value})
     }
 
